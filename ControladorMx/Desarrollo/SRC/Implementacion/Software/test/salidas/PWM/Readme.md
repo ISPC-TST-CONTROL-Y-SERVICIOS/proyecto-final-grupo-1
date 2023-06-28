@@ -20,6 +20,7 @@ pinMode(OUTPUT,25); en esta linea se configura el pin la GPIO25 como salida
 
 analogWrite(25,128); //activamos el pin GPIO25 al 50% de su potencia
 
+![ezgif-4-1b203c3f69](https://github.com/ISPC-TST-CONTROL-Y-SERVICIOS/proyecto-final-grupo-1/assets/109010330/6bcb9cf1-fc98-480b-b9ff-0cc04aac36c5)
 
 https://github.com/ISPC-TST-CONTROL-Y-SERVICIOS/proyecto-final-grupo-1/assets/108964477/2a05d8b5-3b6f-4c8f-8dee-bfa0007d21c4
 
