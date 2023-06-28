@@ -1,5 +1,5 @@
 /* Autor: Leonardo Gonzalez
-Codigo para el testeo de PWM, me diante un ciclo for aumenta su intensidad
+Codigo para el testeo de PWM, mediante un ciclo for aumenta su intensidad
 */
 
 #include <Arduino.h>
