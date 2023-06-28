@@ -16,6 +16,10 @@ GPIO32 a GPIO33
 
 Esta funcion se puede realizar simplemente declarando el pin como salida, luego utilizando la funcion analogWrite de la siguiente manera
 
-pinMode(OUTPUT,10); en esya linea se configura el pin la GPIO10 como salida
+pinMode(OUTPUT,25); en esta linea se configura el pin la GPIO25 como salida
 
-analogWrite(10,150);
+analogWrite(25,128); //activamos el pin GPIO25 al 50% de su potencia
+
+
+## Video
+[![Alt text](https://img.youtube.com/vi/woGeL7PGjPg/0.jpg)](https://youtu.be/woGeL7PGjPg)
