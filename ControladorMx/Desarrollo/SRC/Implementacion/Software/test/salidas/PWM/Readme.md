@@ -22,4 +22,4 @@ analogWrite(25,128); //activamos el pin GPIO25 al 50% de su potencia
 
 
 ## Video
-[![Alt text](https://img.youtube.com/vi/woGeL7PGjPg/0.jpg)](https://youtu.be/woGeL7PGjPg)
+[![Alt text](https://img.youtube.com/vi/woGeL7PGjPg/0.jpg)](https://www.youtube.com/watch?v=woGeL7PGjPg)
