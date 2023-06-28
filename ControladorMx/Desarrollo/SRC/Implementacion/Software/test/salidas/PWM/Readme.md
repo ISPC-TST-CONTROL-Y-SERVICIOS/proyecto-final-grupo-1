@@ -7,10 +7,10 @@ Esto es especialmente útil en aplicaciones donde se requiere controlar la veloc
 
 El Esp32 cuenta con 16 salidas PWM, las cuales son:
 
-GPIO0 a GPIO19
-GPIO21 a GPIO23
-GPIO25 a GPIO27
-GPIO32 a GPIO33
+- GPIO0 a GPIO19
+- GPIO21 a GPIO23
+- GPIO25 a GPIO27
+- GPIO32 a GPIO33
 
 ## Ejemplo de uso
 
