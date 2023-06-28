@@ -7,15 +7,19 @@ Esto es especialmente útil en aplicaciones donde se requiere controlar la veloc
 
 El Esp32 cuenta con 16 salidas PWM, las cuales son:
 
-GPIO0 a GPIO19
-GPIO21 a GPIO23
-GPIO25 a GPIO27
-GPIO32 a GPIO33
+- GPIO0 a GPIO19
+- GPIO21 a GPIO23
+- GPIO25 a GPIO27
+- GPIO32 a GPIO33
 
 ## Ejemplo de uso
 
 Esta funcion se puede realizar simplemente declarando el pin como salida, luego utilizando la funcion analogWrite de la siguiente manera
 
-pinMode(OUTPUT,10); en esya linea se configura el pin la GPIO10 como salida
+pinMode(OUTPUT,25); en esta linea se configura el pin la GPIO25 como salida
 
-analogWrite(10,150);
+analogWrite(25,128); //activamos el pin GPIO25 al 50% de su potencia
+
+
+## Video
+[![Alt text](https://img.youtube.com/vi/woGeL7PGjPg/0.jpg)](https://youtu.be/woGeL7PGjPg)
