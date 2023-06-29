@@ -6,23 +6,23 @@ se encienden o apagan los pines de la matriz de LED según el estado de los pine
 
 #include <Arduino.h>
 
-#define LED_MATRIX_PIN_1 GPIO_NUM_16
-#define LED_MATRIX_PIN_2 GPIO_NUM_17
-#define LED_MATRIX_PIN_3 GPIO_NUM_18
-#define LED_MATRIX_PIN_4 GPIO_NUM_19
-#define LED_MATRIX_PIN_5 GPIO_NUM_21
-#define LED_MATRIX_PIN_6 GPIO_NUM_22
-#define LED_MATRIX_PIN_7 GPIO_NUM_23
-#define LED_MATRIX_PIN_8 GPIO_NUM_25
+#define LED_MATRIX_PIN_1 16
+#define LED_MATRIX_PIN_2 17
+#define LED_MATRIX_PIN_3 18
+#define LED_MATRIX_PIN_4 19
+#define LED_MATRIX_PIN_5 21
+#define LED_MATRIX_PIN_6 22
+#define LED_MATRIX_PIN_7 23
+#define LED_MATRIX_PIN_8 25
 
 void setup() {
   // Configurar los pines de entrada como entradas digitales
-    pinMode(GPIO_NUM_0, INPUT);
-    pinMode(GPIO_NUM_2, INPUT);
-    pinMode(GPIO_NUM_4, INPUT);
-    pinMode(GPIO_NUM_12, INPUT);
-    pinMode(GPIO_NUM_13, INPUT);
-    pinMode(GPIO_NUM_15, INPUT);
+    pinMode(0, INPUT);
+    pinMode(2, INPUT);
+    pinMode(4, INPUT);
+    pinMode(12, INPUT);
+    pinMode(13, INPUT);
+    pinMode(15, INPUT);
 
     // Configurar los pines de la matriz de LED como salidas
     pinMode(LED_MATRIX_PIN_1, OUTPUT);
@@ -37,12 +37,12 @@ void setup() {
 
 void loop() {
     // Leer los valores de los pines de entrada
-        int in1 = digitalRead(GPIO_NUM_0);
-        int in2 = digitalRead(GPIO_NUM_2);
-        int in3 = digitalRead(GPIO_NUM_4);
-        int in4 = digitalRead(GPIO_NUM_12);
-        int in5 = digitalRead(GPIO_NUM_13);
-        int in6 = digitalRead(GPIO_NUM_15);
+        int in1 = digitalRead(0);
+        int in2 = digitalRead(2);
+        int in3 = digitalRead(4);
+        int in4 = digitalRead(12);
+        int in5 = digitalRead(13);
+        int in6 = digitalRead(15);
 
     // Encender la matriz de LED según el estado de los pines de entrada
         digitalWrite(LED_MATRIX_PIN_1, in1);
