@@ -20,9 +20,9 @@ void loop() {
   //Activamos Secuenciador de Leds
   for (int i = 0; i < 6; i++) {
     if (digitalRead(inputPins[i]) == LOW) {  //Leemos Estado Pin de Entrada, Si es bajo
-      digitalWrite(ledPins[i], HIGH);        // Pasamos estado a Alto
+      digitalWrite(ledPins[i], HIGH);        // Encendemos Led
       delay(500);                          // Pausa de medio segundo
-      digitalWrite(ledPins[i], LOW);       // Pasamos estado a Bajo 
+      digitalWrite(ledPins[i], LOW);       // Apagamos Led 
     }
    
   }  
