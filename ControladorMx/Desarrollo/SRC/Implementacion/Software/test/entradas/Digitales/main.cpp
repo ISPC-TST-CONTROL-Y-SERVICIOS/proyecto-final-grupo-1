@@ -24,10 +24,7 @@ void loop() {
     delay(500);
   //Apagamos el led
     digitalWrite(ledPins[i], LOW);
-    // si esta apagado, lo encendemos
-  if (digitalRead(inputPins[i]) == HIGH) {
-      digitalWrite(ledPins[i], HIGH);
-    }   
+
   }
   
 }
