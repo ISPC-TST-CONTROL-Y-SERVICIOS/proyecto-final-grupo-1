@@ -54,7 +54,6 @@ void loop() {
 
         // Esperar un tiempo antes de leer los pines de entrada de nuevo
         delay(500);  
- 
 }
 
 

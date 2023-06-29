@@ -1,4 +1,5 @@
-# Entradas Digitales
+# Entradas Digitales - 
+
 
 ## Descripcion
 
@@ -17,6 +18,4 @@ Esta funcion se puede realizar simplemente declarando el pin como entrada, luego
 pinMode(12, INPUT); // aqui configuramos el pin 12 como entrada
 
 digitalRead(12); // leemos el valor de entrada de ese pin (que puede ser alto o bajo)
-
-## video:
 
