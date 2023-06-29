@@ -7,7 +7,7 @@ se encienden o apagan los pines de la secuencia de LEDs según el estado de los 
 #include <Arduino.h>
 
 // Declaramos el pin al que estará conectado el pulsador
-int pinPulsador1=2;
+int pinPulsador1=0;
 int pinPulsador2=2;
 int pinPulsador3=4;
 int pinPulsador4=12;
