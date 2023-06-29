@@ -6,24 +6,79 @@ se encienden o apagan los pines de la secuencia de LEDs según el estado de los 
 
 #include <Arduino.h>
 
-//Iniciamos los pines del ESP32
-const int ledPins[] = {14, 27, 26, 25, 33, 32}; // Pines de salida para los LEDs
-const int inputPins[] = {0, 2, 4, 12, 13, 15}; // Pines de entrada
+// Declaramos el pin al que estará conectado el pulsador
+int pinPulsador1=2;
+int pinPulsador2=2;
+int pinPulsador3=4;
+int pinPulsador4=12;
+int pinPulsador5=13;
+int pinPulsador6=15;
 
-void setup() {
-   for (int i = 0; i < 6; i++) {
-     pinMode(ledPins[i], OUTPUT); // Declaramos los pines de Salida 
-     pinMode(inputPins[i], INPUT); // Declaramos los pines de Entrada 
-   }
+// Declaramos el pin al que estará conectado el led
+int pinLed1=14;
+int pinLed2=27;
+int pinLed3=26;
+int pinLed4=25;
+int pinLed5=33;
+int pinLed6=32;
+
+void setup()
+{
+  //Determinamos que el pin del pulsador sera para recibir 
+  pinMode(pinPulsador1, INPUT);
+  pinMode(pinPulsador2, INPUT);
+  pinMode(pinPulsador3, INPUT);
+  pinMode(pinPulsador4, INPUT);
+  pinMode(pinPulsador5, INPUT);
+  pinMode(pinPulsador6, INPUT);
+
+  //Determinamos que el pin del led sera para salir
+  pinMode(pinLed1, OUTPUT);
+  pinMode(pinLed2, OUTPUT);
+  pinMode(pinLed3, OUTPUT);
+  pinMode(pinLed4, OUTPUT);
+  pinMode(pinLed5, OUTPUT);
+  pinMode(pinLed6, OUTPUT);
 }
-void loop() {
-  //Activamos Secuenciador de Leds
-  for (int i = 0; i < 6; i++) {
-    if (digitalRead(inputPins[i]) == LOW) {  //Leemos Estado Pin de Entrada, Si es bajo
-      digitalWrite(ledPins[i], HIGH);        // Encendemos Led
-      delay(500);                          // Pausa de medio segundo
-      digitalWrite(ledPins[i], LOW);       // Apagamos Led 
-    }
-   
-  }  
-}  
+void loop()
+{
+  //Si la señal del pulsador es activa encendemos el led
+  if (digitalRead(pinPulsador1) == HIGH) {
+    digitalWrite(pinLed1, HIGH);
+  } 
+  //de lo contrario apagamos el led
+  else {
+    digitalWrite(pinLed1, LOW);
+  }
+  if (digitalRead(pinPulsador2) == HIGH) {
+    digitalWrite(pinLed2, HIGH);
+  } 
+   else {
+    digitalWrite(pinLed2, LOW);
+  }
+  if (digitalRead(pinPulsador3) == HIGH) {
+    digitalWrite(pinLed3, HIGH);
+  } 
+   else {
+    digitalWrite(pinLed3, LOW);
+  }
+   if (digitalRead(pinPulsador4) == HIGH) {
+    digitalWrite(pinLed4, HIGH);
+  } 
+   else {
+    digitalWrite(pinLed4, LOW);
+  }
+  if (digitalRead(pinPulsador5) == HIGH) {
+    digitalWrite(pinLed5, HIGH);
+  } 
+   else {
+    digitalWrite(pinLed5, LOW);
+  }
+   if (digitalRead(pinPulsador6) == HIGH) {
+    digitalWrite(pinLed6, HIGH);
+  } 
+   else {
+    digitalWrite(pinLed6, LOW);
+  }
+  delay(200);
+}
