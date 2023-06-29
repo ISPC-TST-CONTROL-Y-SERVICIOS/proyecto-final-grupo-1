@@ -1,5 +1,5 @@
 /* Autor: Pedro Rojo
-Este código configura los pines 0, 2, 4, 12, 13 y 15 como entradas digitales y los pines 16, 17, 18, 19, 21, 22, 23 y 25 
+Este código configura los pines 0, 2, 4, 12, 13 y 15 como entradas digitales y los pines 16, 17, 18, 19, 21 y 22 
 como salidas digitales para encender una matriz de LED. En el bucle principal, se lee el estado de los pines de entrada y 
 se encienden o apagan los pines de la matriz de LED según el estado de los pines de entrada
 */
@@ -12,8 +12,6 @@ se encienden o apagan los pines de la matriz de LED según el estado de los pine
 #define LED_MATRIX_PIN_4 19
 #define LED_MATRIX_PIN_5 21
 #define LED_MATRIX_PIN_6 22
-#define LED_MATRIX_PIN_7 23
-#define LED_MATRIX_PIN_8 25
 
 void setup() {
   // Configurar los pines de entrada como entradas digitales
@@ -31,8 +29,6 @@ void setup() {
     pinMode(LED_MATRIX_PIN_4, OUTPUT);
     pinMode(LED_MATRIX_PIN_5, OUTPUT);
     pinMode(LED_MATRIX_PIN_6, OUTPUT);
-    pinMode(LED_MATRIX_PIN_7, OUTPUT);
-    pinMode(LED_MATRIX_PIN_8, OUTPUT);
 }
 
 void loop() {
