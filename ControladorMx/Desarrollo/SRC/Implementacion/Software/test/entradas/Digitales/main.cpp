@@ -17,14 +17,13 @@ void setup() {
    }
 }
 void loop() {
-  //Encendemos los leds
+  //Activamos Secuenciador de Leds
   for (int i = 0; i < 6; i++) {
-    digitalWrite(ledPins[i], HIGH);
-  //Esperamos medio segundo
-    delay(500);
-  //Apagamos el led
-    digitalWrite(ledPins[i], LOW);
-
-  }
-  
-}
+    if (digitalRead(inputPins[i]) == LOW) {  //Leemos Estado Pin de Entrada, Si es bajo
+      digitalWrite(ledPins[i], HIGH);        // Pasamos estado a Alto
+      delay(500);                          // Pausa de medio segundo
+      digitalWrite(ledPins[i], LOW);       // Pasamos estado a Bajo 
+    }
+   
+  }  
+}  
