@@ -1,7 +1,7 @@
 /*Diseño y desarrollo de salidas analogicas
   Diseño: Esteban Carrizo
   Fecha: 29/06/23
-  Descripcion: */
+  /*
 
 // Potenciometro conectado a GPIO 26
 const int portPin = 26;
