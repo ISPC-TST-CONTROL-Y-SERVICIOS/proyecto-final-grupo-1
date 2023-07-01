@@ -23,5 +23,3 @@ En la placa de desarollo ESP32 de 38 pines, el bus UART se encuentra disponible 
 
 [![Alt text](https://img.youtube.com/vi/jb8EbSaha9A/0.jpg)](https://www.youtube.com/watch?v=jb8EbSaha9A)
 
-
-## Protocolo SPI ##
