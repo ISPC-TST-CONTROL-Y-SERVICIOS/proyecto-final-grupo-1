@@ -1,6 +1,6 @@
-#Diseño y desarrollo de salidas analogicas
+# Diseño y desarrollo de salidas analogicas
 
-#Descripcion
+# Descripcion
 El ESP32, al igual que otros microcontroladores, ofrece salidas analógicas que permiten generar señales de voltaje continuo en un rango determinado
 
 La forma para usar un pin analogico es la siguente:
