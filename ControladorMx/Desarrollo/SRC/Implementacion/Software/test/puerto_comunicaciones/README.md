@@ -10,3 +10,18 @@ En la placa de desarollo ESP32 de 38 pines, el bus SPI se encuentra disponible e
 - UART (Universal Asynchronous Receiver-Transmitter): El protocolo UART es un estándar de comunicación serial asíncrona que utiliza una línea para transmitir y recibir datos. Generalmente, se utiliza para la comunicación serie entre un microcontrolador y otros dispositivos. Al diseñar y desarrollar un puerto UART, debes considerar lo siguiente: Configuración de la velocidad de transmisión (baud rate). Configuración del número de bits de datos, bits de parada y paridad. Documentación de las funciones y registros utilizados para la comunicación UART en los dispositivos involucrados. Pruebas de comunicación para verificar la transferencia correcta de datos entre los dispositivos.
 En la placa de desarollo ESP32 de 38 pines, el bus UART se encuentra disponible en los pines GPIO 1 (TX) y GPIO 3 (RX). Para utilizar el bus UART en un programa de Arduino, es necesario incluir la librería `HardwareSerial.h` y utilizar las funciones `Serial.begin()` y `Serial.print()` para iniciar la comunicación y enviar datos, respectivamente. Para recibir datos, se utiliza la función `Serial.read()`. Finalmente, para terminar la comunicación, se utiliza la función `Serial.end()`.
 
+
+# Pruebas de sistema de comunicaciones
+
+
+## Protocolo I2C ##
+
+[![Alt text](https://img.youtube.com/vi/HJDiYeqc5bk/0.jpg)](https://www.youtube.com/watch?v=HJDiYeqc5bk)
+
+
+## Protocolo UART ##
+
+[![Alt text](https://img.youtube.com/vi/jb8EbSaha9A/0.jpg)](https://www.youtube.com/watch?v=jb8EbSaha9A)
+
+
+## Protocolo SPI ##
